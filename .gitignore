@@ -8,3 +8,10 @@
 
 -Nimsara’s MacBook Air.gitignore
 stack
+*.dSYM/  # Ignore all debug symbol files
+*        # Ignore everything
+!*.c     # Allow .c files
+!*.h     # Allow .h files (optional if you use headers)
+*.exe
+*.pkgf
+
