@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Nimsara/OneDrive - Sri Lanka Institute of Information Technology/Academic/Year 1/Semester 02/SE1052 Data Structures and Algorithms/C progrms/DSA",
+      "program": "c:/Users/Nimsara/OneDrive - Sri Lanka Institute of Information Technology/Academic/Year 1/Semester 02/SE1052 Data Structures and Algorithms/C progrms/DSA/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
