@@ -10,5 +10,5 @@ int main(void) {
         printf("Memory allocation failed.\n");
         return 1;
     }
-    printf("%lu", sizeof(pm));
+    printf("%llu", sizeof(pm));
 }
