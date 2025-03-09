@@ -1,39 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 
 void push(int *top1, int stack[], int value, int stack_size);
 int pop(int *top1, int stack[], int stack_size);
 int peek(int top1, int stack[], int stack_size);
+bool isFull(int top1, int stack_size);
+bool isEmpty(int top1);
 
 
 int main(void) {
-    int stack_size;
+    int stack_size = 10;
     int top = -1;
-    printf("Enter the stack size: ");
-    scanf("%d", &stack_size);
-    int arr[stack_size];
-    
-    for (int i = 0; i < stack_size; i++) {
-        int temp;
-        printf("Enter value %d: ", i+1);
-        scanf("%d", &temp);
-        push(&top, arr, temp,stack_size);
+    int stack[stack_size];
+    push(&top,stack,30, stack_size);
+    push(&top,stack,80, stack_size);
+    push(&top,stack,100, stack_size);
+    push(&top,stack,25, stack_size);
+    printf("\nDeleting all items from the stack...\n\n");
+    while (!isEmpty(top)) {
+        printf("Popped: %d\n", pop(&top, stack,stack_size ));
     }
-    printf("Peek: %d\n", peek(top, arr,stack_size));
-    for (int i = 0; i < stack_size; i++) {
-        int temp;
-        temp = pop(&top, arr,stack_size);
-        printf("Pop %d: %d\n", i+1, temp);
-        printf("Peeking while popping: %d\n", peek(top, arr,stack_size));
-    }
-    printf("Peekl: %d\n", peek(top, arr,stack_size));
     return 0;
 }
 
 void push(int *top1, int stack[], int value, int stack_size) {
     if (*top1 < stack_size && *top1 >= -1) {
         stack[++*top1] = value;
+        printf("Pushed: %d\n", value);
     } else {
         printf("Stack Overflow!\n");
     }
@@ -61,4 +56,12 @@ int peek(int top1, int stack[], int stack_size) {
         printf("Top out of bounds!\n");
         return -99;
     }
+}
+
+bool isEmpty(int top1) {
+    return (top1 == -1);
+}
+
+bool isFull(int top1, int stack_size) {
+    return (top1 == stack_size - 1);
 }
