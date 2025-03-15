@@ -7,3 +7,25 @@
 *.pkgf
 
 
+stack
+stack.dSYM/Contents/Info.plist
+Worksheet 3/Activity_3
+Worksheet 3/Activity_5.dSYM/Contents/Info.plist
+Worksheet 3/Activity_5.dSYM/Contents/Resources/DWARF/Activity_5
+Worksheet 3/Activity_4.dSYM/Contents/Resources/DWARF/Activity_4
+.gitignore
+Worksheet 3/Activity_3.dSYM/Contents/Resources/Relocations/aarch64/Activity_3.yml
+.gitignore
+Worksheet 3/Activity_4.dSYM/Contents/Resources/Relocations/aarch64/Activity_4.yml
+Worksheet 3/Activity_4.dSYM/Contents/Info.plist
+.gitignore
+Worksheet 3/Activity_3.dSYM/Contents/Resources/DWARF/Activity_3
+.gitignore
+stack.dSYM/Contents/Resources/Relocations/aarch64/stack.yml
+.gitignore
+Worksheet 3/Activity_4
+Worksheet 3/stack.c
+Worksheet 3/Activity_5
+.gitignore
+Worksheet 3/Activity_5.dSYM/Contents/Resources/Relocations/aarch64/Activity_5.yml
+Worksheet 3/Activity_3.dSYM/Contents/Info.plist
