@@ -3,6 +3,10 @@
 #define MAX1 10
 #define MAX2 20
 
+void insert(int queue[], int val, int *rear, int *front, int max);
+int delete(int queue[], int *rear, int *front);
+int peek(int queue[], int front);
+
 int queue1[MAX1];
 int queue2[MAX2];
 
@@ -12,7 +16,6 @@ int rear1 = -1;
 int rear2 = -1;
 
 int main(void) {
-
 }
 
 void insert(int queue[], int val, int *rear, int *front, int max) {
