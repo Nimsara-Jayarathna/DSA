@@ -21,10 +21,15 @@ void traverse();
 
 int main(){
     insert_beginning(10);
+    traverse();
     insert_beginning(5);
+    traverse();
     insert_beginning(0);
+    traverse();
     insert_after_node(10,20);
+    traverse();
     insert_before_node(20,15);
+    traverse();
     insert_ending(25);
     traverse();
     delete_first_node();
